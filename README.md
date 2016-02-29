@@ -5,22 +5,34 @@ Installation
 
 The preferred way to install this extension is through http://getcomposer.org/download/.
 
-Either run
+## Install
 
-```sh
-php composer.phar require ruskid/yii2-stripe "dev-master"
+Add to your composer.json file
+
+```
+"repositories": [
+        {
+            "url": "https://github.com/WondersLabCorporation/yii2-stripe.git",
+            "type": "git"
+        }
+    ]
+```
+and run
+
+```bash
+$ composer require WondersLabCorporation/yii2-stripe "dev-master"
 ```
 
 or add
 
-```json
-"ruskid/yii2-stripe": "dev-master"
+```
+"WondersLabCorporation/yii2-stripe": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
 
 
-Usage
+## Usage
 --------------------------
 Add a new component in main.php
 ```php

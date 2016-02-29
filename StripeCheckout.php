@@ -58,6 +58,11 @@ class StripeCheckout extends \yii\base\Widget {
     public $image = "/128x128.png";
 
     /**
+     * @var string to resolve an issue with `unable to perform color detection`
+     */
+    public $color = "black";
+
+    /**
      * @see Stripe. The currency of the amount (3-letter ISO code). The default is USD.
      * @var string currency
      */
@@ -140,6 +145,8 @@ class StripeCheckout extends \yii\base\Widget {
                     'data-email' => $this->userEmail,
                     'data-label' => $this->label,
                     'data-allow-remember-me' => $this->allowRemember,
+                    'data-image' => $this->image,
+                    'data-color' => $this->color,
                     'class' => self::BUTTON_CLASS,
         ]);
     }

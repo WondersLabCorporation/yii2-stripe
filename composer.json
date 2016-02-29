@@ -1,5 +1,5 @@
 {
-    "name": "ruskid/yii2-stripe",
+    "name": "WondersLabCorporation/yii2-stripe",
     "type": "library",
     "description": "Yii2 Stripe Wrapper",
     "keywords": ["yii2","stripe"],
